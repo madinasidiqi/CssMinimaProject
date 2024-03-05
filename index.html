@@ -15,14 +15,15 @@
     </head>
    
     <body>
-    <div class="Container-Full nav">
+    <div class="Container-Fulls nav">
         <div class="Container">
             <!-- Menue section -->
             <div class="nav-left">
                 <img src="images/Logo.png" alt="Logo">
+                <span id="bar" onclick="showmenu()"><i class="fa-solid fa-bars" ></i></span>
             </div>
-            <div class="nav-center">
-                <ul>
+            <div class="nav-center" >
+                <ul id="menu">
                     <li><a href="#"> Home</a></li>
                     <li><a href="#"> Meta Tabs</a></li>
                     <li><a href="#"> Single Formats</a></li>
@@ -562,5 +563,13 @@
 
  </div>
  <!-- control buttons end-->
+ <script>
+    function showmenu(){
+        let  menu = document.getElementById("menu");
+       menu.classList.toggle("showmenu");
+
+
+    }
+ </script>
     </body>
 </html>

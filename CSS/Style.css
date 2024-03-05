@@ -48,6 +48,9 @@ a{
     .nav .nav-left img{
         width: 60px;
     }
+    #bar{
+        display: none;
+    }
     .nav .nav-right{
         margin-left: auto;
     }
@@ -525,7 +528,23 @@ a{
     .Container{ width: 100%;
         padding: 20px 0;
     }
-    
+    .nav .nav-center ul{
+        display: none;
+
+    }
+    .showmenu{
+        display: block !important;
+    }
+    #bar{
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    .nav .Container .nav-left{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
     .nav .nav-center ul li{
         display: block;
         line-height: 2;
